@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body style="background-color: #FFFFE8;">
+    <form  method="post" id="form1">
+        <div>
+            PERSONS NAME:
+            <br>
+            <br>
+            <input type="text" id="first" placeholder="firstname" required>
+            <input type="text" id="last" placeholder="lastname" required>
+            <br>
+            <br>
+            PHONE NUMBER:
+            <br>
+            <br>
+            <input type="text" id="phno" placeholder="phone no" required>
+            <br>
+            <br>
+            <input type="button"  value="SUBMIT" name="addbutton" onclick="addRow()">
+            <br>
+            <br>
+            SEARCH:
+            <input type="text" name="" id="searchTerm">
+            <br>
+            <br>
+            <input type="button" value="SEARCH" onclick="search()">
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>SERIAL NO</th>
+                    <th onclick="sortNames()">NAME</th>
+                    <th>CONTACT</th>
+                    <th>DELETE</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+                
+            </tbody>
+        </table>
+    </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
